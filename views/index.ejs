@@ -1,0 +1,11 @@
+<body>
+    <h1>Here are the Mongooses!</h1>
+    <% for (var x in arr) { %>
+        <p>Mongoose's json:<%= arr[x] %></p>
+        <p>Mongoose's name:<%= arr[x].name %></p>
+        <p>Favorite color:<%= arr[x].favorite_color %></p>
+        <a href="mongooses/<%= arr[x]._id%>">check this out</a>
+        <hr>
+    <% } %>
+    <a href="/mongooses/new"> Add another Mongoose</a>
+</body>
